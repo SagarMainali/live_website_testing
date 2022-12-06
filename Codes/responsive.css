@@ -1,0 +1,95 @@
+/* large screen */
+@media screen and (min-width: 1200px) {
+     .para {
+          width: 450px;
+     }
+}
+
+/*medium screen*/
+@media only screen and (max-width: 992px) {
+
+     .header>.container {
+          /* border: 1px solid red; */
+          height: 90%;
+          /*to be parent of row and align items in center*/
+     }
+
+     .nav-item a {
+          margin: 8px 30px 8px 0px;
+     }
+
+     .nav-item a hr {
+          width: 100%;
+     }
+
+     .texts {
+          /*to highlight the text by avoiding fade*/
+          background: rgba(243, 244, 246, 0.6);
+          padding: 20px;
+          border-radius: 20px;
+     }
+
+     .process img {
+          height: 100px;
+          width: auto;
+     }
+
+     .para {
+          width: auto;
+     }
+
+     .footer-body .footer-logo {
+          text-align: center;
+          /* not working in bootstrap*/
+     }
+}
+
+/* small screens */
+@media screen and (max-width: 768px) {
+
+     .whychooseus,
+     .wedding,
+     .instantbooking,
+     .getintouch,
+     .footer {
+          margin-top: 75px;
+     }
+
+     .tablecontent {
+          overflow-x: scroll;
+     }
+}
+
+/*extra small screen*/
+@media only screen and (max-width: 576px) {
+     .container {
+          padding: 20px !important;
+     }
+
+     .process img {
+          height: 75px;
+          width: auto;
+     }
+
+     .process p {
+          font-size: 14px;
+     }
+
+     .ellipse1 {
+          height: 100px;
+          width: 100px;
+     }
+
+     .ellipse2 {
+          height: 180px;
+          width: 180px;
+     }
+
+     .whychooseus,
+     .wedding,
+     .instantbooking,
+     .getintouch,
+     .footer {
+          margin-top: 40px;
+     }
+}
