@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>NVTAT | Vehicles</title>
+     <link rel="icon" type="image/x-icon" href="Assets/logotop.png">
+
+     <!--Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+     <!-- AOS Library -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+     <!-- 1st section - Navigation Bar -->
+
+     <nav class="navbar navbar-expand-lg pt-2 navbar-light">
+          <div class="container align-items-center">
+               <a href="index.html" class="navbar-brand"><img src="Assets/logo.svg" alt="LOGO" width="150"></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto pt-md-0 pt-3">
+                         <li class="nav-item">
+                              <a href="index.html" class="nav-link">Home</a>
+                         </li>
+                         <li class="nav-item">
+                              <a href="vehicles.html" class="nav-link">Vehicles
+                                   <hr>
+                              </a>
+                         </li>
+                         <li class="nav-item">
+                              <a href="pricing.html" class="nav-link">Pricing</a>
+                         </li>
+                         <li class="nav-item">
+                              <a href="services.html" class="nav-link">Services</a>
+                         </li>
+                         <li class="nav-item">
+                              <a href="aboutus.html" class="nav-link lastlink">About Us</a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </nav>
+
+     <!-- 2nd secion - Vehicle Categories-->
+     <div class="container mt-5">
+          <div class="vehicle-brief">
+               <p><span>Nepal Vehicle Tours And Travels</span> provides different category of
+                    vehicles. We provide
+                    vehicle service
+                    for every type of trips. Our vehilce travels all over Nepal for any number of days. We have our own
+                    drivers who are highly experienced to drive on the roads of Himalayan, Hilly and Terai region of
+                    Nepal. The vehicles are well-maintained and clean considering comfortness of our customers.</p>
+          </div>
+
+          <div class="container vehicle-categories mb-5">
+               <div class="heading text-center py-5">
+                    <h3>Our <span>Vehicle</span> Categories</h3>
+               </div>
+               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gx-5 gy-5">
+                    <div class="col" data-aos="zoom-in">
+                         <a href="#car"><img src="Assets/car.svg"></a>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                         <a href="#jeep">
+                              <img src="Assets/jeep.svg"></a>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                         <a href="#van">
+                              <img src="Assets/van.svg"></a>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                         <a href="#hiace">
+                              <img src="Assets/hiace.svg">
+                         </a>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                         <a href="#coaster">
+                              <img src="Assets/coaster.svg">
+                         </a>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                         <a href="#bus">
+                              <img src="Assets/bus.svg">
+                         </a>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Vehicle details and Carousel part -->
+
+          <div class="vehicle-details">
+               <div class="car mb-5 pt-4" id="car">
+                    <h3>Car</h3>
+                    <div class="row row-cols-1 row-cols-md-2">
+                         <div class="col">
+                              <p>Among all the other vehicles we offer, car is the most affordable and flexible. Cars
+                                   are
+                                   suitable
+                                   for around 1-4 people. We offer different sedan cars of different brands. The best
+                                   places
+                                   to travel with cars
+                                   are
+                                   around
+                                   the valley which covers Kathmandu, Bhaktapur and Lalitpur. Our car travels to far
+                                   destinations also but it may not be a good
+                                   option considering comfortness of the travellers. Since the roads outside the valley
+                                   are
+                                   mostly offroads,
+                                   we suggest the travellers to
+                                   go
+                                   for jeep.
+                                   However, we also respect our customer's choice and if you want to go for quick
+                                   sideseeing
+                                   around the valley or want
+                                   airport pickup and dropoff service form us,
+                                   we highly recommend this category.
+                              </p>
+                              <a href="booking.html"><button data-aos="fade-right">Book Car</button></a>
+                         </div>
+                         <div class="col carousel">
+                              <div id="carcarousel" class="carousel slide" data-bs-ride="carousel">
+                                   <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                             <img src="Assets/car1.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/car2.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/car3.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/car4.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/car5.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/car6.jpg" class="d-block w-100">
+                                        </div>
+                                   </div>
+                                   <button class="carousel-control-prev" type="button" data-bs-target="#carcarousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                   </button>
+                                   <button class="carousel-control-next" type="button" data-bs-target="#carcarousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="jeep mb-5 pt-4" id="jeep">
+                    <h3>Jeep</h3>
+                    <div class="row row-cols-1 row-cols-md-2">
+                         <div class="col">
+                              <p>Jeeps are a good choice if travellers want to go outside the valley areas. The
+                                   comfortness
+                                   it
+                                   provides along with the space for few luggages
+                                   and few more people, jeeps are the best alternative for cars. The Jeeps are suitable
+                                   for
+                                   around 5-8 people. The jeeps goes well with the condition of roads outslide the
+                                   valley.
+                                   Since travellers also have some luggage when they visit
+                                   places far from the valley, jeeps are suitalbe in this case as well. We provide
+                                   variety of
+                                   2WD and 4WD jeeps in affordable price that can travel anywhere with ease.
+                              </p>
+                              <a href="booking.html"><button data-aos="fade-right">Book Jeep</button></a>
+                         </div>
+                         <div class="col carousel">
+                              <div id="jeepcarousel" class="carousel slide" data-bs-ride="carousel">
+                                   <div class="carousel-inner">
+                                        <div class="carousel-item">
+                                             <img src="Assets/jeep1.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/jeep2.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/jeep7.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/jeep3.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item active">
+                                             <img src="Assets/jeep6.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/jeep4.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/jeep5.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/jeep8.jpg" class="d-block w-100">
+                                        </div>
+                                   </div>
+                                   <button class="carousel-control-prev" type="button" data-bs-target="#jeepcarousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                   </button>
+                                   <button class="carousel-control-next" type="button" data-bs-target="#jeepcarousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="van mb-5 pt-4" id="van">
+                    <h3>Van</h3>
+                    <div class="row row-cols-1 row-cols-md-2">
+                         <div class="col">
+                              <p>Vans have larger room for people than cars and jeeps due to its spacious nature. People
+                                   usually like to travel in a van if they are bigger in number but does not want to
+                                   travel
+                                   much far away from the valley. Vans are around 7-11 seater at max. The short and
+                                   medium
+                                   distance travel is best suited with this type of vehicle. This is not a flexible
+                                   vehicle
+                                   for further distance in hilly and mountain regions of Nepal because of its low
+                                   suspension height which may cause problems in offroads.
+                                   However, this could be the best choice even while having long trips when travelling
+                                   to
+                                   Terai region of Nepal since the road condition are good.
+                              </p>
+                              <a href="booking.html"><button data-aos="fade-right">Book Van</button></a>
+                         </div>
+                         <div class="col carousel">
+                              <div id="vancarousel" class="carousel slide" data-bs-ride="carousel">
+                                   <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                             <img src="Assets/van1.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/van2.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/van3.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/van4.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/van5.jpg" class="d-block w-100">
+                                        </div>
+                                   </div>
+                                   <button class="carousel-control-prev" type="button" data-bs-target="#vancarousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                   </button>
+                                   <button class="carousel-control-next" type="button" data-bs-target="#vancarousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="hiace mb-5 pt-4" id="hiace">
+                    <h3>Hiace</h3>
+                    <div class="row row-cols-1 row-cols-md-2">
+                         <div class="col">
+                              <p>Hiace vehicle are the alternative to the regular vans. The design of the regular van
+                                   and the
+                                   hiace vans are almost identical. The regular vans are of at least 3 types unlike
+                                   hiace.
+                                   The hiace offers more space for luggage and people. It has the seat for around 14
+                                   people.
+                                   It is a good choice for family trips outside or inside the valley. The seats are very
+                                   comfortable in this type of vehilce providing enough space for legs as well. Hiace
+                                   vans
+                                   are larger in size than the regular vans and jeep as well. They are specifically not
+                                   designed to handle offroads therefore Terai region tour would be best with this
+                                   vehicle.
+                              </p>
+                              <a href="booking.html"><button data-aos="fade-right">Book Hiace</button></a>
+                         </div>
+                         <div class="col carousel">
+                              <div id="hiacecarousel" class="carousel slide" data-bs-ride="carousel">
+                                   <div class="carousel-inner">
+                                        <div class="carousel-item">
+                                             <img src="Assets/hiace3.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item active">
+                                             <img src="Assets/hiace4.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/hiace2.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/hiace5.jpg" class="d-block w-100">
+                                        </div>
+                                   </div>
+                                   <button class="carousel-control-prev" type="button" data-bs-target="#hiacecarousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                   </button>
+                                   <button class="carousel-control-next" type="button" data-bs-target="#hiacecarousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="coaster mb-5 pt-4" id="coaster">
+                    <h3>Coaster</h3>
+                    <div class="row row-cols-1 row-cols-md-2">
+                         <div class="col">
+                              <p>Coaster are mini-bus having the seat capacity of around 20-24 people. Along with this,
+                                   there
+                                   is
+                                   extra space for your luggage as well. The seating position is much more higher giving
+                                   the
+                                   travellers the experience of better view on the trip. Due to the large size of the
+                                   vehicle, travellers feel comfortable through their tour. Coaster are preferred during
+                                   far
+                                   trips as they can handle certain type of offroads although they are not specifically
+                                   designed for offroads. This vehilce could be a good choice for the families going to
+                                   picnic and ceremonies like Janti as well.
+                              </p>
+                              <a href="booking.html"><button data-aos="fade-right">Book Coaster</button></a>
+                         </div>
+                         <div class="col carousel">
+                              <div id="coastercarousel" class="carousel slide" data-bs-ride="carousel">
+                                   <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                             <img src="Assets/coaster1.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/coaster2.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/coaster3.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/coaster4.jpg" class="d-block w-100">
+                                        </div>
+                                   </div>
+                                   <button class="carousel-control-prev" type="button" data-bs-target="#coastercarousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                   </button>
+                                   <button class="carousel-control-next" type="button" data-bs-target="#coastercarousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                   </button>
+                              </div>
+
+                         </div>
+                    </div>
+               </div>
+
+               <div class="bus pt-4" id="bus">
+                    <h3>Bus</h3>
+                    <div class="row row-cols-1 row-cols-md-2">
+                         <div class="col">
+                              <p>Among all types of vehicle we provide to our travellers, bus is the largest category.
+                                   The
+                                   seat capacity of this type of vehilce is around 30-40. You can already assume the
+                                   space it
+                                   provides for your luggages due to its gigantic nature. This vehilce can easily handle
+                                   offroads and long trips without travellers feeling discomfort. The seating position
+                                   is way
+                                   higher than any other type of vehilce giving you the best view experience along your
+                                   whole
+                                   trip. This is usually a good choice when the travellers are huge in number and the
+                                   destination is much far. Our travellers for this type of vehicle are usually those
+                                   going
+                                   for picnic, long-stay, Janti and Tirtha Yatras.
+                              </p>
+                              <a href="booking.html"><button data-aos="fade-right">Book Bus</button></a>
+                         </div>
+                         <div class="col carousel">
+                              <div id="buscarousel" class="carousel slide" data-bs-ride="carousel">
+                                   <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                             <img src="Assets/bus1.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/bus2.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                             <img src="Assets/bus3.jpg" class="d-block w-100">
+                                        </div>
+                                   </div>
+                                   <button class="carousel-control-prev" type="button" data-bs-target="#buscarousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                   </button>
+                                   <button class="carousel-control-next" type="button" data-bs-target="#buscarousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- 3rd section - Instant Booking -->
+
+     <div class="instantbooking">
+          <div class="wave">
+               <img src="Assets/topwave.svg" class="img-fluid">
+          </div>
+          <div class="booking px-5">
+               <div class="heading text-center pt-2 pb-sm-4" data-aos="zoom-in">
+                    <h3>Instant Booking</h3>
+               </div>
+               <form action="#" method="POST">
+                    <div class="row justify-content-center">
+                         <div class="col-lg-9 col-xl-7 column">
+                              <div class="row row-cols-1 row-cols-md-2 justify-content-center py-5">
+                                   <div class="col d-flex flex-column align-items-center" data-aos="zoom-in">
+                                        <input type="text" placeholder="Full Name" name="Full Name" class="form-control"
+                                             id="fullname" required maxlength="25">
+                                        <input type="text" placeholder="Address" name="Address" class="form-control"
+                                             id="address" required maxlength="25">
+                                        <input type="email" placeholder="Email" name="Email" class="form-control"
+                                             id="email" required maxlength="25">
+                                        <input type="tel" placeholder="Phone" name="Number" class="form-control"
+                                             id="phone" required maxlength="15">
+                                        <select class="form-select" name="Vehicle Type" class="form-control"
+                                             id="vehicletype">
+                                             <option selected>Vehicle Type</option>
+                                             <option value="1">Car</option>
+                                             <option value="2">Jeep</option>
+                                             <option value="3">Van</option>
+                                             <option value="4">Hiace</option>
+                                             <option value="5">Coaster</option>
+                                             <option value="6">Bus</option>
+                                        </select>
+                                   </div>
+                                   <div class="col d-flex flex-column align-items-center" data-aos="zoom-in">
+                                        <input type="text" placeholder="Destination" name="Destination"
+                                             class="form-control" id="destination" required maxlength="25">
+                                        <input type="text" placeholder="Pickup Location" name="Pickup Location"
+                                             class="form-control" id="pickuplocation" required maxlength="30">
+                                        <input type="date" placeholder="From:" name="From" class="form-control"
+                                             id="from" required>
+                                        <input type="date" placeholder="To:" name="To" class="form-control" id="to"
+                                             required>
+                                        <!-- <input class="button" type="submit" value="Book Now"> -->
+                                        <button type="submit" class="button">Book Now <i
+                                                  class="bi bi-clipboard-check-fill ms-1"></i></button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </form>
+          </div>
+          <div class="wave">
+               <img src="Assets/bottomwave.svg" class="img-fluid">
+          </div>
+     </div>
+
+     <!-- 4th section - Get in touch-->
+
+     <div class="getintouch" id="getintouch">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-6 d-flex flex-column">
+                         <div class="heading text-center mb-5" data-aos="flip-up" data-aos-duration="700">
+                              <h3>Get In <span>Touch</span></h3>
+                         </div>
+                         <form action="#" class="body d-flex flex-column contact">
+                              <input type="text" class="form-control" placeholder="Name" required data-aos="fade-right"
+                                   data-aos-duration="400">
+                              <input type="tel" class="form-control" placeholder="Phone Number" required
+                                   data-aos="fade-right" data-aos-duration="550">
+                              <input type="email" class="form-control" placeholder="Email" required
+                                   data-aos="fade-right" data-aos-duration="700">
+                              <input type="text" class="form-control" placeholder="Message" data-aos="fade-right"
+                                   data-aos-duration="950">
+                              <input class="button" type="submit" value="Send" data-aos="fade-right"
+                                   data-aos-duration="1100">
+                         </form>
+                    </div>
+                    <div class="col-md-6">
+                         <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d882.9850361603527!2d85.32531958801776!3d27.719134286116557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1944671de78b%3A0x9854c96ab8eb2de6!2sAll%20Nepal%20Tours%20and%20Travels%20pvt%20ltd!5e0!3m2!1sen!2snp!4v1668497232861!5m2!1sen!2snp"
+                              width="100%" height="100%" allowfullscreen=" true"
+                              referrerpolicy="no-referrer-when-downgrade" class="map" id="map"></iframe>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- 5th section - Footer -->
+
+     <footer class="footer">
+          <div class="container">
+               <div class="row footer-body justify-content-between">
+
+                    <div class="col-lg-4 d-flex flex-column">
+                         <div class="footer-logo">
+                              <img src="Assets/footer-logo.svg" alt="LOGO" width="220">
+                         </div>
+                         <div class="brands my-5">
+                              <div class="heading">
+                                   <h3>Brands we use</h3>
+                              </div>
+                              <div class="image-section">
+                                   <div class="row">
+                                        <div class="col">
+                                             <img src="Assets/ford.png" alt="ford">
+                                             <img src="Assets/hyundai.png" alt="hyundai">
+                                             <img src="Assets/nissan.png" alt="nissan">
+                                             <img src="Assets/honda.png" alt="honda">
+                                             <img src="Assets/suzuki.png" alt="suzuki">
+                                             <img src="Assets/kia.png" alt="kia">
+                                             <img src="Assets/toyota.png" alt="toyota">
+                                             <img src="Assets/renault.png" alt="renault">
+                                             <img src="Assets/mini.png" alt="mini">
+                                             <img src="Assets/datsun.png" alt="datsun">
+                                             <img src="Assets/chevrolet.png" alt="chevrolet">
+                                             <img src="Assets/tata.png" alt="tata">
+                                             <img src="Assets/mahindra.png" alt="mahindra">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 mb-5">
+                         <div class="heading text-center">
+                              <h3>Quick Links</h3>
+                         </div>
+                         <div class="quick-links-title d-flex justify-content-center">
+                              <div class="d-flex flex-column">
+                                   <span><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a href="#">Vehicles</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a href="pricing.html">Pricing</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a href="services.html">Services</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a href="aboutus.html">About Us</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a href="booking.html">Booking</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a href="reviews.html">Reviews</a></span>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 mb-5">
+                         <div class="heading text-center">
+                              <h3>Vehicles</h3>
+                         </div>
+                         <div class="quick-links-title d-flex justify-content-center">
+                              <div class="d-flex flex-column">
+                                   <span><i class="bi bi-chevron-right"></i> <a href="vehicles.html#car">Car</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a
+                                             href="vehicles.html#jeep">Jeep</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a href="vehicles.html#van">Van</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a
+                                             href="vehicles.html#hiace">Hiace</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a
+                                             href="vehicles.html#coaster">Coaster</a></span>
+                                   <span><i class="bi bi-chevron-right"></i> <a href="vehicles.html#bus">Bus</a></span>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-5">
+                         <div class="heading text-center">
+                              <h3>Contact Us</h3>
+                         </div>
+                         <div class="contact-section d-flex justify-content-center">
+                              <div class="d-flex flex-column">
+                                   <span><i class="bi bi-geo-alt-fill"></i> <a href="#map">Nil Saraswatisthan,
+                                             Kathmandu</a></span>
+                                   <span><i class="bi bi-telephone-fill"></i> Tel no: 01-4442140</span>
+                                   <span><i class="bi bi-phone-fill"></i> Mobile no: 9803405102</span>
+                                   <span><i class="bi bi-whatsapp"></i> Whatsapp/Viber: 9803405102</span>
+                                   <span><i class="bi bi-envelope-fill"></i> info@nepalvehicletravelsandtours.com</span>
+                                   <span><i class="bi bi-envelope-fill"></i>
+                                        sagarkarki@nepalvehicletravelsandtours.com</span>
+                                   <span><i class="bi bi-envelope-fill"></i>
+                                        sishir@nepalvehicletravelsandtours.com</span>
+                                   <button class="btn btn-sm btn-footer" data-aos="zoom-out"> <a
+                                             href="booking.html#getintouch">Quick
+                                             Enquiry</a></button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <hr>
+
+               <div class="row footer-bottom justify-content-between">
+                    <div class="social-links-section col-md-6 mb-3">
+                         <div class="social-links-title">Find Us On:</div>
+                         <div class="social-links-icons">
+                              <a href="https://www.facebook.com/Nepal-Vehicle-Travels-And-Tours-107658835522048"
+                                   target="_blank"><i class="bi bi-facebook"></i></a>
+                              <a><i class="bi bi-instagram"></i></a>
+                              <a><i class="bi bi-youtube"></i></a>
+                         </div>
+                    </div>
+                    <div class="copyright-section align-self-center col-md-6">
+                         <span>&copy All Nepal Tours and Travels Pvt. Ltd. | All Rights Reserved. View</span>
+                         <a href="tandc.html">Terms & Conditions</a>
+                    </div>
+               </div>
+          </div>
+     </footer>
+
+     <!--Bootstrap JavaScript-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+
+     <!--AOS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+          AOS.init({
+               duration: 500,
+          });
+     </script>
+</body>
+
+</html>
