@@ -133,7 +133,9 @@
                                    airport pickup and dropoff service form us,
                                    we highly recommend this category.
                               </p>
-                              <a href="booking.html"><button data-aos="fade-right">Book Car</button></a>
+                              <a href="#instantbooking" onclick="preFillVehicle(this)" id="vehicle1"><button
+                                        data-aos="fade-right">Book
+                                        Car</button></a>
                          </div>
                          <div class="col carousel">
                               <div id="carcarousel" class="carousel slide" data-bs-ride="carousel">
@@ -189,7 +191,8 @@
                                    variety of
                                    2WD and 4WD jeeps in affordable price that can travel anywhere with ease.
                               </p>
-                              <a href="booking.html"><button data-aos="fade-right">Book Jeep</button></a>
+                              <a href="#instantbooking" onclick="preFillVehicle(this)" id="vehicle2"><button
+                                        data-aos="fade-right">Book Jeep</button></a>
                          </div>
                          <div class="col carousel">
                               <div id="jeepcarousel" class="carousel slide" data-bs-ride="carousel">
@@ -251,7 +254,8 @@
                                    to
                                    Terai region of Nepal since the road condition are good.
                               </p>
-                              <a href="booking.html"><button data-aos="fade-right">Book Van</button></a>
+                              <a href="#instantbooking" onclick="preFillVehicle(this)" id="vehicle3"><button
+                                        data-aos="fade-right">Book Van</button></a>
                          </div>
                          <div class="col carousel">
                               <div id="vancarousel" class="carousel slide" data-bs-ride="carousel">
@@ -304,7 +308,8 @@
                                    designed to handle offroads therefore Terai region tour would be best with this
                                    vehicle.
                               </p>
-                              <a href="booking.html"><button data-aos="fade-right">Book Hiace</button></a>
+                              <a href="#instantbooking" onclick="preFillVehicle(this)" id="vehicle4"><button
+                                        data-aos="fade-right">Book Hiace</button></a>
                          </div>
                          <div class="col carousel">
                               <div id="hiacecarousel" class="carousel slide" data-bs-ride="carousel">
@@ -353,7 +358,8 @@
                                    designed for offroads. This vehilce could be a good choice for the families going to
                                    picnic and ceremonies like Janti as well.
                               </p>
-                              <a href="booking.html"><button data-aos="fade-right">Book Coaster</button></a>
+                              <a href="#instantbooking" onclick="preFillVehicle(this)" id="vehicle5"><button
+                                        data-aos="fade-right">Book Coaster</button></a>
                          </div>
                          <div class="col carousel">
                               <div id="coastercarousel" class="carousel slide" data-bs-ride="carousel">
@@ -405,7 +411,8 @@
                                    going
                                    for picnic, long-stay, Janti and Tirtha Yatras.
                               </p>
-                              <a href="booking.html"><button data-aos="fade-right">Book Bus</button></a>
+                              <a href="#instantbooking" onclick="preFillVehicle(this)" id="vehicle6"><button
+                                        data-aos="fade-right">Book Bus</button></a>
                          </div>
                          <div class="col carousel">
                               <div id="buscarousel" class="carousel slide" data-bs-ride="carousel">
@@ -439,7 +446,7 @@
 
      <!-- 3rd section - Instant Booking -->
 
-     <div class="instantbooking">
+     <div class="instantbooking" id="instantbooking">
           <div class="wave">
                <img src="Assets/topwave.svg" class="img-fluid">
           </div>
@@ -480,6 +487,7 @@
                                              id="from" required>
                                         <input type="date" placeholder="To:" name="To" class="form-control" id="to"
                                              required>
+
                                         <!-- <input class="button" type="submit" value="Book Now"> -->
                                         <button type="submit" class="button">Book Now <i
                                                   class="bi bi-clipboard-check-fill ms-1"></i></button>
@@ -551,9 +559,7 @@
                                              <img src="Assets/kia.png" alt="kia">
                                              <img src="Assets/toyota.png" alt="toyota">
                                              <img src="Assets/renault.png" alt="renault">
-                                             <img src="Assets/mini.png" alt="mini">
                                              <img src="Assets/datsun.png" alt="datsun">
-                                             <img src="Assets/chevrolet.png" alt="chevrolet">
                                              <img src="Assets/tata.png" alt="tata">
                                              <img src="Assets/mahindra.png" alt="mahindra">
                                         </div>
@@ -641,6 +647,8 @@
                </div>
           </div>
      </footer>
+
+     <script src="script.js"></script>
 
      <!--Bootstrap JavaScript-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

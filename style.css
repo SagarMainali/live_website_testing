@@ -353,7 +353,7 @@ button:hover {
      font-family: 'Montserrat';
      font-size: 14px !important;
      font-weight: 500 !important;
-     color: rgb(0, 0, 0) !important;
+     color: rgba(0, 0, 0, 1) !important;
 }
 
 .booking input,
@@ -370,6 +370,10 @@ select {
      border-radius: 10px !important;
      color: rgb(0, 0, 0) !important;
      border: 0 !important;
+}
+
+select {
+     cursor: pointer;
 }
 
 .booking .button,
@@ -647,34 +651,36 @@ select {
 /* services page*/
 
 .services .item {
-     box-shadow: 0 0 5px rgb(0 0 200 / 20%);
      border-radius: 10px;
-     padding: 0.5rem;
+     overflow: hidden;
+     margin-right: 25px;
+     margin-bottom: 50px;
 }
 
-.services p {
-     text-align: center;
+.services img {
+     height: 250px;
+     object-fit: cover;
+}
+.services h3, .services h3 span{
+     font-size: 28px !important;
 }
 
 .services h4 {
-     color: #41587E !important;
-     text-align: center !important;
-     margin-bottom: 2rem;
+     margin-bottom: 16px;
+     font-size: 20px;
 }
 
-.img-box img {
-     border-radius: 10px 10px 0 0;
-     height: 250px;
+.text-box {
+     padding: 20px;
 }
 
-.services .owl-stage {
-     padding-top: 0.2rem;
-     padding-bottom: 4rem;
+.item{
+     box-shadow: 0 14px 25px rgba(0,0,0,0.2), 0 10px 6px rgba(0,0,0,0.1);
+     transition: all 0.2s;
 }
 
-.services .container-fluid {
-     padding-right: 0.5rem !important;
-
+.item:hover{
+     box-shadow: 0 18px 25px rgba(0,0,0,0.3), 0 15px 6px rgba(0,0,0,0.2);
 }
 
 /* abous us page */
