@@ -180,6 +180,15 @@
                   <option value="4">Hiace</option>
                   <option value="5">Coaster</option>
                   <option value="6">Bus</option>
+                  <select class="form-select" name="Service" class="form-control" id="service">
+                    <option selected>Service</option>
+                    <option value="1">Pick up/Drop off</option>
+                    <option value="2">Sightseeing(Half day/Full day)</option>
+                    <option value="3">Overnight Stays</option>
+                    <option value="4">Disposal(Half day/Full day)</option>
+                    <option value="5">Wedding</option>
+                    <option value="6">Others</option>
+                </select>
                 </select>
               </div>
               <div class="col d-flex flex-column align-items-center" data-aos="zoom-in">
@@ -187,8 +196,8 @@
                   required maxlength="25">
                 <input type="text" placeholder="Pickup Location" name="Pickup Location" class="form-control"
                   id="pickuplocation" required maxlength="30">
-                <input type="date" placeholder="From:" name="From" class="form-control" id="from" required>
-                <input type="date" placeholder="To:" name="To" class="form-control" id="to" required>
+                <input type="datetime-local" placeholder="From:" name="From" class="form-control" id="from" required>
+                <input type="datetime-local" placeholder="To:" name="To" class="form-control" id="to" required>
                 <!-- <input class="button" type="submit" value="Book Now"> -->
                 <button type="submit" class="button">Book Now <i class="bi bi-clipboard-check-fill ms-1"></i></button>
               </div>
