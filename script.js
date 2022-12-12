@@ -35,10 +35,10 @@ $(document).ready(function () {
 // using loop instead of for loops (more convenient)
 function preFillVehicle(selected) {
      var id_that_called_the_function = selected.id;
-     const vehiclelist = ["vehicle1", "vehicle2", "vehicle3", "vehicle4", "vehicle5", "vehicle6"];
+     const vehiclelist = ["Car", "Jeep", "Van", "Hiace", "Coaster", "Bus"];
      for (let i = 0; i < vehiclelist.length; i++) {
           if (id_that_called_the_function == vehiclelist[i]) {
-               document.getElementById("vehicletype").value = i + 1;
+               document.getElementById("LEADCF6").value = vehiclelist[i];
                break;
           }
      }
@@ -46,10 +46,10 @@ function preFillVehicle(selected) {
 
 function preFillService(selected) {
      var id_that_called_the_function = selected.id;
-     const servicelist = ["service1", "service2", "service3", "service4", "service5"];
+     const servicelist = ["Pick up/Drop off", "Sightseeing(Half day/Full day)", "Overnight Stays", "Disposal(Half day/Full day)", "Wedding and other ceremonies"];
      for (let i = 0; i < servicelist.length; i++) {
           if (id_that_called_the_function == servicelist[i]) {
-               document.getElementById("service").value = i + 1;
+               document.getElementById("LEADCF5").value = servicelist[i];
                break;
           }
      }
