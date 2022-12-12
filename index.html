@@ -264,8 +264,8 @@
       <div class="heading text-center pt-2 pb-sm-4" data-aos="zoom-in">
         <h3>Instant Booking</h3>
       </div>
-      
-	    <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5579553000000468106 method='POST'
+
+      <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5579553000000468106 method='POST'
                     onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5579553000000468106()'
                     accept-charset='UTF-8'>
                     <div class="row justify-content-center">
@@ -285,32 +285,33 @@
                                         </input>
 
                                         <input type="text" id='Last_Name' name='Last Name' placeholder="Full Name"
-                                             class="form-control" id="fullname" required maxlength="25">
+                                             class="form-control" required maxlength="25">
                                         <input type="text" id='LEADCF4' name='LEADCF4' placeholder="Address"
-                                             class="form-control" id="address" required maxlength="25">
+                                             class="form-control" required maxlength="25">
                                         <input type="email" ftype='email' id='Email' name='Email' placeholder="Email"
-                                             class="form-control" id="email" required maxlength="25">
+                                             class="form-control" required maxlength="25">
                                         <input type="text" id='Mobile' name='Mobile' placeholder="Phone"
-                                             class="form-control" id="phone" required maxlength="15">
+                                             class="form-control" required maxlength="15">
                                         <select class="form-select" id='LEADCF6' name='LEADCF6' class="form-control">
                                              <option selected>Vehicle Type</option>
                                              <option value='Car'>Car</option>
-					     <option value='Jeep'>Jeep</option>
-					     <option value='Van'>Van</option>
-					     <option value='Hiace'>Hiace</option>
-					     <option value='Coaster'>Coaster</option>
-					     <option value='Bus'>Bus</option>
+                                             <option value='Jeep'>Jeep</option>
+                                             <option value='Van'>Van</option>
+                                             <option value='Hiace'>Hiace</option>
+                                             <option value='Coaster'>Coaster</option>
+                                             <option value='Bus'>Bus</option>
                                         </select>
                                         <select class="form-select" id='LEADCF5' name='LEADCF5' class="form-control">
-                                             <option selected>Service</option>
-                                             <option value='Pick&#x20;up&#x2f;Drop&#x20;off'>Pick up&#x2f;Drop off</option>
-                              		     <option value='Sightseeing&#x28;Half&#x20;day&#x2f;&#x20;Full&#x20;day&#x29;'>
-                                   	     Sightseeing&#x28;Half day&#x2f; Full day&#x29;</option>
-                              		     <option value='Overnight&#x20;Stays'>Overnight Stays</option>
-                             		     <option value='Disposal&#x28;Half&#x20;day&#x2f;&#x20;Full&#x20;day&#x29;'>
-                                              Disposal&#x28;Half day&#x2f; Full day&#x29;</option>
-                                	      <option value='Wedding'>Wedding</option>
-                             			 <option value='Others'>Others</option>
+                                             <option value='Pick&#x20;up&#x2f;Drop&#x20;off'>Pick up&#x2f;Drop off
+                                             </option>
+                                             <option
+                                                  value='Sightseeing&#x28;Half&#x20;day&#x2f;&#x20;Full&#x20;day&#x29;'>
+                                                  Sightseeing&#x28;Half day&#x2f; Full day&#x29;</option>
+                                             <option value='Overnight&#x20;Stays'>Overnight Stays</option>
+                                             <option value='Disposal&#x28;Half&#x20;day&#x2f;&#x20;Full&#x20;day&#x29;'>
+                                                  Disposal&#x28;Half day&#x2f; Full day&#x29;</option>
+                                             <option value='Wedding'>Wedding</option>
+                                             <option value='Others'>Others</option>
                                         </select>
                                    </div>
                                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in">
@@ -318,10 +319,10 @@
                                              class="form-control" required maxlength="25">
                                         <input type="text" id='LEADCF1' name='LEADCF1' placeholder="Pickup Location"
                                              class="form-control" required maxlength="30">
-                                        <input type="datetime-local" id='LEADCF117' name='LEADCF117' placeholder="From:"
+                                        <input type="datetime-local" id='LEADCF8' name='LEADCF8' placeholder="From:"
                                              class="form-control">
-                                        <input type="datetime-local" id='LEADCF116' name='LEADCF116' placeholder="To:"
-                                             class="form-control" required>
+                                        <input type="datetime-local" id='LEADCF7' name='LEADCF7' placeholder="To:"
+                                             class="form-control">
                                         <!-- <input class="button" type="submit" value="Book Now"> -->
                                         <button type="submit" id='formsubmit' class="button formsubmit">Book Now <i
                                                   class="bi bi-clipboard-check-fill ms-1"></i></button>
@@ -345,29 +346,10 @@
                                              }
                                              return true;
                                         }
-                                        function validateDateFormat5579553000000468106() {
-                                             var form = document.forms['WebToLeads5579553000000468106'];
-                                             var dateFlds = form.querySelectorAll('[ftype=date]');
-                                             var i;
-                                             for (i = 0; i < dateFlds.length; i++) {
-                                                  var dateFld = dateFlds[i];
-                                                  var usrPtrn = dateFld.placeholder;
-                                                  var dateVal = dateFld.value;
-                                                  if (dateVal.trim() != '') {
-                                                       var vald = dateFormatConvert.validate(dateVal, usrPtrn);
-                                                       if (!vald) {
-                                                            alert('Please enter a valid date ');
-                                                            dateFld.focus();
-                                                            return false;
-                                                       }
-                                                  }
-                                             }
-                                             return true;
-                                        }
 
                                         function checkMandatory5579553000000468106() {
-                                             var mndFileds = new Array('Last Name', 'Email', 'Mobile', 'LEADCF116', 'LEADCF117', 'LEADCF1', 'LEADCF2', 'LEADCF4', 'LEADCF5', 'LEADCF6');
-                                             var fldLangVal = new Array('Full\x20Name', 'Email', 'Mobile', 'To', 'From', 'Pickup\x20Location', 'Destination', 'Address', 'Service', 'Vehicle\x20Type');
+                                             var mndFileds = new Array('Last Name', 'Email', 'Mobile', 'LEADCF1', 'LEADCF2', 'LEADCF4', 'LEADCF5', 'LEADCF6', 'LEADCF7', 'LEADCF8');
+                                             var fldLangVal = new Array('Full\x20Name', 'Email', 'Mobile', 'Pickup\x20Location', 'Destination', 'Address', 'Service', 'Vehicle\x20Type', 'To', 'From');
                                              for (i = 0; i < mndFileds.length; i++) {
                                                   var fieldObj = document.forms['WebToLeads5579553000000468106'][mndFileds[i]];
                                                   if (fieldObj) {
@@ -401,8 +383,6 @@
                                                   }
                                              }
                                              if (!validateEmail5579553000000468106()) { return false; }
-
-                                             if (!validateDateFormat5579553000000468106()) { return false; }
                                              document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                                         }
 
@@ -420,6 +400,10 @@
                                              }
                                         }
                                    </script>
+                                   <!-- Do not remove this --- Analytics Tracking code starts -->
+                                   <script id='wf_anal'
+                                        src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=1de0e71887a1af9ce5112fbf96085da9c3e07d071a302a321ea9162d2fd4805dgid6afdcf9c537165597f59fb503c376ae3a026412de52c0c7badd54d5d2abe3de3gid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+                                   <!-- Do not remove this --- Analytics Tracking code ends. -->
                               </div>
                          </div>
                     </div>
