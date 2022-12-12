@@ -22,7 +22,30 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
 
-  <!-- Do not remove this code. -->
+</head>
+
+<body>
+
+  <!-- Note :
+   - You can modify the font style and form style to suit your website. 
+   - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
+   - The Mandatory check script can modified as to suit your business needs. 
+   - It is important that you test the modified form before going live.-->
+  <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'
+    style='background-color: white;color: black;max-width: 600px;'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+    <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5579553000000430005 method='POST'
+      onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5579553000000430005()' accept-charset='UTF-8'>
+      <input type='text' style='display:none;' name='xnQsjsdp'
+        value='6afdcf9c537165597f59fb503c376ae3a026412de52c0c7badd54d5d2abe3de3'></input>
+      <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+      <input type='text' style='display:none;' name='xmIwtLD'
+        value='1de0e71887a1af9ce5112fbf96085da9f2080989dcbea61efdbac74bde9af3a4'></input>
+      <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
+      <input type='text' style='display:none;' name='returnURL'
+        value='https&#x3a;&#x2f;&#x2f;sagarmainali.github.io&#x2f;live_website_testing&#x2f;'> </input>
+      <!-- Do not remove this code. -->
       <style>
         html,
         body {
@@ -216,24 +239,7 @@
           }
         }
       </style>
-  
-</head>
-
-<body>
-
-  <!-- Note :
-   - You can modify the font style and form style to suit your website. 
-   - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
-   - The Mandatory check script can modified as to suit your business needs. 
-   - It is important that you test the modified form before going live.-->
-  <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'
-    style='background-color: white;color: black;max-width: 600px;'>
-    <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
-    <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5579553000000430005 method='POST'
-      onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5579553000000430005()' accept-charset='UTF-8'>
- 
       <div class='zcwf_title' style='max-width: 600px;color: black;'>Testing Form</div>
-      
       <div class='zcwf_row'>
         <div class='zcwf_col_lab' style='font-size:14px; font-family: Arial;'><label for='Last_Name'>Full Name<span
               style='color:red;'>*</span></label></div>
@@ -241,7 +247,6 @@
           <div class='zcwf_col_help'></div>
         </div>
       </div>
-      
       <div class='zcwf_row'>
         <div class='zcwf_col_lab' style='font-size:14px; font-family: Arial;'><label for='Phone'>Phone<span
               style='color:red;'>*</span></label></div>
@@ -249,7 +254,6 @@
           <div class='zcwf_col_help'></div>
         </div>
       </div>
-    
       <div class='zcwf_row'>
         <div class='zcwf_col_lab' style='font-size:14px; font-family: Arial;'><label for='Email'>Email<span
               style='color:red;'>*</span></label></div>
@@ -257,7 +261,6 @@
           <div class='zcwf_col_help'></div>
         </div>
       </div>
-  
       <div class='zcwf_row'>
         <div class='zcwf_col_lab' style='font-size:14px; font-family: Arial;'><label for='Description'>Description<span
               style='color:red;'>*</span></label></div>
@@ -265,12 +268,84 @@
           <div class='zcwf_col_help'></div>
         </div>
       </div>
-  
       <div class='zcwf_row'>
         <div class='zcwf_col_lab'></div>
         <div class='zcwf_col_fld'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit'
             title='Submit'><input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'></div>
       </div>
+      <script>
+        function validateEmail5579553000000430005() {
+          var form = document.forms['WebToLeads5579553000000430005'];
+          var emailFld = form.querySelectorAll('[ftype=email]');
+          var i;
+          for (i = 0; i < emailFld.length; i++) {
+            var emailVal = emailFld[i].value;
+            if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+              var atpos = emailVal.indexOf('@');
+              var dotpos = emailVal.lastIndexOf('.');
+              if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                alert('Please enter a valid email address. ');
+                emailFld[i].focus();
+                return false;
+              }
+            }
+          }
+          return true;
+        }
+
+        function checkMandatory5579553000000430005() {
+          var mndFileds = new Array('Last Name', 'Email', 'Phone', 'Description');
+          var fldLangVal = new Array('Full\x20Name', 'Email', 'Phone', 'Description');
+          for (i = 0; i < mndFileds.length; i++) {
+            var fieldObj = document.forms['WebToLeads5579553000000430005'][mndFileds[i]];
+            if (fieldObj) {
+              if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                if (fieldObj.type == 'file') {
+                  alert('Please select a file to upload.');
+                  fieldObj.focus();
+                  return false;
+                }
+                alert(fldLangVal[i] + ' cannot be empty.');
+                fieldObj.focus();
+                return false;
+              } else if (fieldObj.nodeName == 'SELECT') {
+                if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                  alert(fldLangVal[i] + ' cannot be none.');
+                  fieldObj.focus();
+                  return false;
+                }
+              } else if (fieldObj.type == 'checkbox') {
+                if (fieldObj.checked == false) {
+                  alert('Please accept  ' + fldLangVal[i]);
+                  fieldObj.focus();
+                  return false;
+                }
+              }
+              try {
+                if (fieldObj.name == 'Last Name') {
+                  name = fieldObj.value;
+                }
+              } catch (e) { }
+            }
+          }
+          if (!validateEmail5579553000000430005()) { return false; }
+          document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+        }
+
+        function tooltipShow5579553000000430005(el) {
+          var tooltip = el.nextElementSibling;
+          var tooltipDisplay = tooltip.style.display;
+          if (tooltipDisplay == 'none') {
+            var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+            for (i = 0; i < allTooltip.length; i++) {
+              allTooltip[i].style.display = 'none';
+            }
+            tooltip.style.display = 'block';
+          } else {
+            tooltip.style.display = 'none';
+          }
+        }
+      </script>
     </form>
   </div>
 
@@ -822,80 +897,6 @@
       duration: 500,
     });
   </script>
-
-<script>
-        function validateEmail5579553000000430005() {
-          var form = document.forms['WebToLeads5579553000000430005'];
-          var emailFld = form.querySelectorAll('[ftype=email]');
-          var i;
-          for (i = 0; i < emailFld.length; i++) {
-            var emailVal = emailFld[i].value;
-            if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
-              var atpos = emailVal.indexOf('@');
-              var dotpos = emailVal.lastIndexOf('.');
-              if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                alert('Please enter a valid email address. ');
-                emailFld[i].focus();
-                return false;
-              }
-            }
-          }
-          return true;
-        }
-
-        function checkMandatory5579553000000430005() {
-          var mndFileds = new Array('Last Name', 'Email', 'Phone', 'Description');
-          var fldLangVal = new Array('Full\x20Name', 'Email', 'Phone', 'Description');
-          for (i = 0; i < mndFileds.length; i++) {
-            var fieldObj = document.forms['WebToLeads5579553000000430005'][mndFileds[i]];
-            if (fieldObj) {
-              if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                if (fieldObj.type == 'file') {
-                  alert('Please select a file to upload.');
-                  fieldObj.focus();
-                  return false;
-                }
-                alert(fldLangVal[i] + ' cannot be empty.');
-                fieldObj.focus();
-                return false;
-              } else if (fieldObj.nodeName == 'SELECT') {
-                if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
-                  alert(fldLangVal[i] + ' cannot be none.');
-                  fieldObj.focus();
-                  return false;
-                }
-              } else if (fieldObj.type == 'checkbox') {
-                if (fieldObj.checked == false) {
-                  alert('Please accept  ' + fldLangVal[i]);
-                  fieldObj.focus();
-                  return false;
-                }
-              }
-              try {
-                if (fieldObj.name == 'Last Name') {
-                  name = fieldObj.value;
-                }
-              } catch (e) { }
-            }
-          }
-          if (!validateEmail5579553000000430005()) { return false; }
-          document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-        }
-
-        function tooltipShow5579553000000430005(el) {
-          var tooltip = el.nextElementSibling;
-          var tooltipDisplay = tooltip.style.display;
-          if (tooltipDisplay == 'none') {
-            var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
-            for (i = 0; i < allTooltip.length; i++) {
-              allTooltip[i].style.display = 'none';
-            }
-            tooltip.style.display = 'block';
-          } else {
-            tooltip.style.display = 'none';
-          }
-        }
-      </script>
 
 </body>
 
