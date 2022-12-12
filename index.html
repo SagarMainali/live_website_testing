@@ -401,17 +401,17 @@
             <h3>Get In <span>Touch</span></h3>
           </div>
           
-	  <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5579553000000430005
+	  <form action='https://crm.zoho.com/crm/WebToContactForm' name=WebToContacts5579553000000461090
                               method='POST'
-                              onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5579553000000430005()'
+                              onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5579553000000461090()'
                               accept-charset='UTF-8' class="body d-flex flex-column contact">
 
                               <input type='text' style='display:none;' name='xnQsjsdp'
                                    value='6afdcf9c537165597f59fb503c376ae3a026412de52c0c7badd54d5d2abe3de3'></input>
                               <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
                               <input type='text' style='display:none;' name='xmIwtLD'
-                                   value='1de0e71887a1af9ce5112fbf96085da9f2080989dcbea61efdbac74bde9af3a4'></input>
-                              <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
+                                   value='1de0e71887a1af9ce5112fbf96085da960feef90ac6ccbcd2f115dcab439f77e'></input>
+                              <input type='text' style='display:none;' name='actionType' value='Q29udGFjdHM='></input>
                               <input type='text' style='display:none;' name='returnURL'
                                    value='https&#x3a;&#x2f;&#x2f;sagarmainali.github.io&#x2f;live_website_testing&#x2f;'>
                               </input>
@@ -419,8 +419,8 @@
                               <input type="text" id='Last_Name' name='Last Name' class="form-control" placeholder="Name"
                                    required data-aos="fade-right" data-aos-duration="400">
 
-                              <input type="text" id='Phone' name='Phone' class="form-control" placeholder="Phone Number"
-                                   required data-aos="fade-right" data-aos-duration="550">
+                              <input type="text" id='Mobile' name='Mobile' class="form-control"
+                                   placeholder="Phone Number" required data-aos="fade-right" data-aos-duration="550">
 
                               <input type="email" ftype='email' id='Email' name='Email' class="form-control"
                                    placeholder="Email" required data-aos="fade-right" data-aos-duration="700">
@@ -432,8 +432,8 @@
                                    data-aos="fade-right" data-aos-duration="1100">
 
                               <script>
-                                   function validateEmail5579553000000430005() {
-                                        var form = document.forms['WebToLeads5579553000000430005'];
+                                   function validateEmail5579553000000461090() {
+                                        var form = document.forms['WebToContacts5579553000000461090'];
                                         var emailFld = form.querySelectorAll('[ftype=email]');
                                         var i;
                                         for (i = 0; i < emailFld.length; i++) {
@@ -451,11 +451,11 @@
                                         return true;
                                    }
 
-                                   function checkMandatory5579553000000430005() {
-                                        var mndFileds = new Array('Last Name', 'Email', 'Phone', 'Description');
-                                        var fldLangVal = new Array('Full\x20Name', 'Email', 'Phone', 'Description');
+                                   function checkMandatory5579553000000461090() {
+                                        var mndFileds = new Array('Last Name', 'Email', 'Mobile', 'Description');
+                                        var fldLangVal = new Array('Full\x20Name', 'Email', 'Phone', 'Message');
                                         for (i = 0; i < mndFileds.length; i++) {
-                                             var fieldObj = document.forms['WebToLeads5579553000000430005'][mndFileds[i]];
+                                             var fieldObj = document.forms['WebToContacts5579553000000461090'][mndFileds[i]];
                                              if (fieldObj) {
                                                   if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
                                                        if (fieldObj.type == 'file') {
@@ -486,11 +486,11 @@
                                                   } catch (e) { }
                                              }
                                         }
-                                        if (!validateEmail5579553000000430005()) { return false; }
+                                        if (!validateEmail5579553000000461090()) { return false; }
                                         document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                                    }
 
-                                   function tooltipShow5579553000000430005(el) {
+                                   function tooltipShow5579553000000461090(el) {
                                         var tooltip = el.nextElementSibling;
                                         var tooltipDisplay = tooltip.style.display;
                                         if (tooltipDisplay == 'none') {
@@ -504,7 +504,12 @@
                                         }
                                    }
                               </script>
-                              
+
+                              <!-- Do not remove this --- Analytics Tracking code starts -->
+                              <script id='wf_anal'
+                                   src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=1de0e71887a1af9ce5112fbf96085da960feef90ac6ccbcd2f115dcab439f77egid6afdcf9c537165597f59fb503c376ae3a026412de52c0c7badd54d5d2abe3de3gid5cf99212d7958dbcd176c761c6ce0a4d7e43e277bdc5d8b9c12010015418942cgid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+                              <!-- Do not remove this --- Analytics Tracking code ends. -->
+
                          </form>
 		
 		
