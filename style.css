@@ -657,6 +657,11 @@ select {
      margin-bottom: 50px;
 }
 
+/* this is very important for alignment */
+.services .row{
+     margin-left: 1px;
+}
+
 .services img {
      height: 250px;
      object-fit: cover;
