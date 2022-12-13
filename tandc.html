@@ -184,9 +184,9 @@
                   maxlength="100">
                 <input type="email" ftype='email' id='Email' name='Email' placeholder="Email" class="form-control"
                   required maxlength="100">
-                <input type="text" id='Mobile' name='Mobile' placeholder="Phone" class="form-control" required
+                <input type="number" id='Mobile' name='Mobile' placeholder="Phone" class="form-control" required
                   maxlength="15">
-                <select class="form-select" id='LEADCF6' name='LEADCF6' class="form-control">
+                <select class="form-select" id='LEADCF6' name='LEADCF6' class="form-control" required>
                   <option selected>Vehicle Type</option>
                   <option value='Car'>Car</option>
                   <option value='Jeep'>Jeep</option>
@@ -195,7 +195,7 @@
                   <option value='Coaster'>Coaster</option>
                   <option value='Bus'>Bus</option>
                 </select>
-                <select class="form-select" id='LEADCF5' name='LEADCF5' class="form-control">
+                <select class="form-select" id='LEADCF5' name='LEADCF5' class="form-control" required>
                   <option selected>Service</option>
                   <option value='Pick&#x20;up&#x2f;Drop&#x20;off'>Pick up&#x2f;Drop off
                   </option>
@@ -211,10 +211,10 @@
               <div class="col d-flex flex-column align-items-center" data-aos="zoom-in">
                 <input type="text" id='LEADCF2' name='LEADCF2' placeholder="Destination" class="form-control" required
                   maxlength="100">
-                <input type="text" id='LEADCF1' name='LEADCF1' placeholder="Pickup Location" class="form-control"
+                <input type="text" id='LEADCF1' name='LEADCF1' placeholder="Pickup Location" class="form-control" required
                   required maxlength="100">
-                <input type="datetime-local" id='LEADCF8' name='LEADCF8' placeholder="From:" class="form-control">
-                <input type="datetime-local" id='LEADCF7' name='LEADCF7' placeholder="To:" class="form-control">
+                <input type="datetime-local" id='LEADCF8' name='LEADCF8' placeholder="From:" class="form-control" required>
+                <input type="datetime-local" id='LEADCF7' name='LEADCF7' placeholder="To:" class="form-control" required>
                 <!-- <input class="button" type="submit" value="Book Now"> -->
                 <button type="submit" id='formsubmit' class="button formsubmit">Book Now <i
                     class="bi bi-clipboard-check-fill ms-1"></i></button>
@@ -334,13 +334,13 @@
             <input type="text" id='Last_Name' name='Last Name' class="form-control" placeholder="Name" required
               data-aos="fade-right" data-aos-duration="400">
 
-            <input type="text" id='Mobile' name='Mobile' class="form-control" placeholder="Phone Number" required
+            <input type="number" id='Mobile' name='Mobile' class="form-control" placeholder="Phone Number" required
               data-aos="fade-right" data-aos-duration="550">
 
             <input type="email" ftype='email' id='Email' name='Email' class="form-control" placeholder="Email" required
               data-aos="fade-right" data-aos-duration="700">
 
-            <input type="text" id='Description' name='Description' class="form-control" placeholder="Message"
+            <input type="text" id='Description' name='Description' class="form-control" placeholder="Message" required
               data-aos="fade-right" data-aos-duration="950">
 
             <input type="submit" id='formsubmit' class="button formsubmit" value="Send" data-aos="fade-right"

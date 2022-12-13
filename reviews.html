@@ -204,9 +204,9 @@
                                              class="form-control" required maxlength="100">
                                         <input type="email" ftype='email' id='Email' name='Email' placeholder="Email"
                                              class="form-control" required maxlength="100">
-                                        <input type="text" id='Mobile' name='Mobile' placeholder="Phone"
+                                        <input type="number" id='Mobile' name='Mobile' placeholder="Phone"
                                              class="form-control" required maxlength="15">
-                                        <select class="form-select" id='LEADCF6' name='LEADCF6' class="form-control">
+                                        <select class="form-select" id='LEADCF6' name='LEADCF6' class="form-control" required>
                                              <option selected>Vehicle Type</option>
                                              <option value='Car'>Car</option>
                                              <option value='Jeep'>Jeep</option>
@@ -215,7 +215,7 @@
                                              <option value='Coaster'>Coaster</option>
                                              <option value='Bus'>Bus</option>
                                         </select>
-                                        <select class="form-select" id='LEADCF5' name='LEADCF5' class="form-control">
+                                        <select class="form-select" id='LEADCF5' name='LEADCF5' class="form-control" required> 
                                              <option selected>Service</option>
                                              <option value='Pick&#x20;up&#x2f;Drop&#x20;off'>Pick up&#x2f;Drop off
                                              </option>
@@ -230,13 +230,13 @@
                                         </select>
                                    </div>
                                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in">
-                                        <input type="text" id='LEADCF2' name='LEADCF2' placeholder="Destination"
+                                        <input type="text" id='LEADCF2' name='LEADCF2' placeholder="Destination" required
                                              class="form-control" required maxlength="100">
-                                        <input type="text" id='LEADCF1' name='LEADCF1' placeholder="Pickup Location"
+                                        <input type="text" id='LEADCF1' name='LEADCF1' placeholder="Pickup Location" required
                                              class="form-control" required maxlength="100">
-                                        <input type="datetime-local" id='LEADCF8' name='LEADCF8' placeholder="From:"
+                                        <input type="datetime-local" id='LEADCF8' name='LEADCF8' placeholder="From:" required
                                              class="form-control">
-                                        <input type="datetime-local" id='LEADCF7' name='LEADCF7' placeholder="To:"
+                                        <input type="datetime-local" id='LEADCF7' name='LEADCF7' placeholder="To:" required
                                              class="form-control">
                                         <!-- <input class="button" type="submit" value="Book Now"> -->
                                         <button type="submit" id='formsubmit' class="button formsubmit">Book Now <i
@@ -358,14 +358,14 @@
                               <input type="text" id='Last_Name' name='Last Name' class="form-control" placeholder="Name"
                                    required data-aos="fade-right" data-aos-duration="400">
 
-                              <input type="text" id='Mobile' name='Mobile' class="form-control"
+                              <input type="number" id='Mobile' name='Mobile' class="form-control"
                                    placeholder="Phone Number" required data-aos="fade-right" data-aos-duration="550">
 
                               <input type="email" ftype='email' id='Email' name='Email' class="form-control"
                                    placeholder="Email" required data-aos="fade-right" data-aos-duration="700">
 
                               <input type="text" id='Description' name='Description' class="form-control"
-                                   placeholder="Message" data-aos="fade-right" data-aos-duration="950">
+                                   placeholder="Message" required data-aos="fade-right" data-aos-duration="950">
 
                               <input type="submit" id='formsubmit' class="button formsubmit" value="Send"
                                    data-aos="fade-right" data-aos-duration="1100">
