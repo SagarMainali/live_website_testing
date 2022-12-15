@@ -96,4 +96,8 @@
      label{
           display: block;
      }
+     
+     input[type="datetime-local"] {
+          padding-top: 20px !important;
+     }
 }
