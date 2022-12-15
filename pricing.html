@@ -18,6 +18,9 @@
      <!-- AOS Library -->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+     <!-- flatpickr.js -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
      <!-- Custom CSS -->
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="responsive.css">
@@ -1607,8 +1610,9 @@
                                              class="form-control" required maxlength="100">
                                         <input type="number" id='Mobile' name='Mobile' placeholder="Phone"
                                              class="form-control" required maxlength="15">
-                                        <select class="form-select" id='LEADCF6' name='LEADCF6' class="form-control" required>
-                                             <option selected>Vehicle Type</option>
+                                        <select class="form-select" id='LEADCF6' name='LEADCF6' class="form-control"
+                                             required>
+                                             <option hidden>Vehicle Type</option>
                                              <option value='Car'>Car</option>
                                              <option value='Jeep'>Jeep</option>
                                              <option value='Van'>Van</option>
@@ -1616,8 +1620,9 @@
                                              <option value='Coaster'>Coaster</option>
                                              <option value='Bus'>Bus</option>
                                         </select>
-                                        <select class="form-select" id='LEADCF5' name='LEADCF5' class="form-control" required>
-                                             <option selected>Service</option>
+                                        <select class="form-select" id='LEADCF5' name='LEADCF5' class="form-control"
+                                             required>
+                                             <option hidden>Service</option>
                                              <option value='Pick&#x20;up&#x2f;Drop&#x20;off'>Pick up&#x2f;Drop off
                                              </option>
                                              <option
@@ -1635,11 +1640,10 @@
                                              class="form-control" required maxlength="100">
                                         <input type="text" id='LEADCF1' name='LEADCF1' placeholder="Pickup Location"
                                              class="form-control" required maxlength="100">
-                                        <input type="datetime-local" id='LEADCF8' name='LEADCF8' placeholder="From:" required
-                                             class="form-control">
-                                        <input type="datetime-local" id='LEADCF7' name='LEADCF7' placeholder="To:" required
-                                             class="form-control">
-                                        <!-- <input class="button" type="submit" value="Book Now"> -->
+                                        <input type="datetime-local" id='LEADCF8' name='LEADCF8'
+                                             placeholder="Pickup Date..." required class="form-control">
+                                        <input type="datetime-local" id='LEADCF7' name='LEADCF7'
+                                             placeholder="Dropoff Date..." required class="form-control">
                                         <button type="submit" id='formsubmit' class="button formsubmit">Book Now <i
                                                   class="bi bi-clipboard-check-fill ms-1"></i></button>
                                    </div>
@@ -1895,6 +1899,15 @@
                                    </div>
                               </div>
                          </div>
+
+                         <div class="payment">
+                              <div class="heading">
+                                   <h3>We Accept</h3>
+                              </div>
+                              <img src="Assets/esewa.webp" alt="esewa" width="70" class="me-2">
+                              <img src="Assets/khalti.jpg" alt="khalti" width="70">
+                         </div>
+
                     </div>
 
                     <div class="col-lg-2 col-6 mb-5">
@@ -1946,8 +1959,6 @@
                                    <span><i class="bi bi-whatsapp"></i> Whatsapp/Viber: 9803405102</span>
                                    <span><i class="bi bi-envelope-fill"></i> info@nepalvehicletravelsandtours.com</span>
                                    <span><i class="bi bi-envelope-fill"></i>
-                                        sagarkarki@nepalvehicletravelsandtours.com</span>
-                                   <span><i class="bi bi-envelope-fill"></i>
                                         sishir@nepalvehicletravelsandtours.com</span>
                                    <button class="btn btn-sm btn-footer" data-aos="zoom-out"> <a
                                              href="booking.html#getintouch">Quick
@@ -1995,6 +2006,18 @@
      <script>
           AOS.init({
                duration: 500,
+          });
+     </script>
+
+     <!-- flatpickr.js -->
+     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+     <script>
+          flatpickr("input[type=datetime-local]", {
+               enableTime: true,
+               altInput: true,
+               altFormat: "F j, Y - h:i K",
+               dateFormat: "Y-m-d - h:i K",
+               minDate: "today",
           });
      </script>
 

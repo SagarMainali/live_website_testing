@@ -22,6 +22,9 @@
     <!-- AOS Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- flatpickr.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
     <!-- css cdn for owl-carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -87,12 +90,13 @@
                     </div>
                     <div class="text-box">
                         <h4>Pick up/Drop off</h4>
-                        <p>Need to get picked up and dropped off? We are here to help.
-                            We do have a servic of picking you up from the airport or any other
-                            destinations to your assigned hotel other areas. Cost depends upon
-                            the distance of travel.
-                            Our customers can enjoy Safe and stress-free ride
-                            in an affordable price.
+                        <p>Our one of the popular and quick service is pick up and drop off. We provide pick up and drop
+                            off
+                            service around the country in affordable price. This service
+                            is very relavant when you have luggages to transport along with you. Mostly, people book
+                            this
+                            service when arriving at the airport or going to the airport. However, we take our client
+                            wherever they want to go.
                         </p>
                         <a href="#instantbooking" onclick="preFillService(this)" id="Pick up/Drop off"><button>Book
                                 Now</button></a>
@@ -106,13 +110,15 @@
                     <div class="text-box">
                         <h4>Sightseeing(Half day/Full day)
                         </h4>
-                        <p>Take a full-day or half day private tour that combines the sunrise
+                        <p>Take a full-day or half-day tour that combines the sunrise
                             viewing at Nagarkot with a sightseeing trip to Bhaktapur —a UNESCO
-                            World Heritage Site. Continue to Bhaktapur after breakfast and visit
-                            top attractions in the culture-rich city, including Bhaktapur Durbar
-                            Square, Nyatapole Temple, Dattatreya Temple, and 55 Window Palace.
-                            Your tour includes breakfast, private guide and
-                            vehicle, and hotel pickup and drop-off
+                            World Heritage Site. Continue to Lalitpur and Kathmandu city as well after breakfast and
+                            visit
+                            top attractions in the culture-rich cities, including Bhaktapur Durbar
+                            Square, Nyatapole Temple, Dattatreya Temple, Basantapur, Patan Durbar Square, 55 Window
+                            Palace, etc. Sightseeing is also
+                            available outside the valley.
+
                         </p>
                         <a href="#instantbooking" onclick="preFillService(this)"
                             id="Sightseeing(Half day/Full day)"><button>Book
@@ -126,15 +132,11 @@
                     </div>
                     <div class="text-box">
                         <h4>Overnight Stays</h4>
-                        <p>To spend time in Kathmandu is quite interesting (especially if you a re
-                            a first-time visitor). However, its chaotic pace can
-                            quickly cause a sensory overload. Luckily, we are here to guide you
-                            to attractive destinations dotted around the capital that
-                            refrains you from the hustle and bustle of the big city. Whether
-                            you are looking for utmost relaxation
-                            or want to get your adrenaline pumping, one of Kathmandu Valley's
-                            superb resorts will be there to welcome you with open
-                            arms.</p>
+                        <p>Hanging around Kathmandu city is quite interesting. However, its chaotic pace can
+                            quickly cause a sensory overload and ruin your peace. Due to this, you might want to travel
+                            from here for couple of days. Don't refrain calling us for overnight stays service, we make
+                            sure you get to your destination safe. Travel and take a few days break, we got you covered.
+                        </p>
                         <a href="#instantbooking" onclick="preFillService(this)" id="Overnight Stays"><button>Book
                                 Now</button></a>
                     </div>
@@ -147,11 +149,10 @@
                     <div class="text-box">
                         <h4>Disposal(Half day/Full day)
                         </h4>
-                        <p>You are a free to go any where you like in Kathmandu and other cities
-                            including pokhara, chitwan, either for shopping,
-                            dining, or visit touristic sights. We provide Air-conditioned
-                            vehicle with very experienced driver. We exclude Entrance fee to any
-                            place, food and drinks and gratuities.</p>
+                        <p>We offer disposal service all over Nepal. Wherever you want to go, we will take you in
+                            affordable price. Whether its one way or two way(return),we will take you to your
+                            destination. Feel free to carry your luggages on your long trips, our vehicle comes with
+                            enough space to fit your stuff.</p>
                         <a href="#instantbooking" onclick="preFillService(this)"
                             id="Disposal(Half day/Full day)"><button>Book
                                 Now</button></a>
@@ -165,15 +166,13 @@
                     <div class="text-box">
                         <h4>Wedding and other ceremonies
                         </h4>
-                        <p>We also provide our customers with a car
-                            rental or hiring for
-                            Marriage ceremonies. We are providing a car service for Marriage
-                            ceremony with very affordable price. We will
-                            provide a clean car with driver and you can decorate the car the way
-                            you
-                            want.
-                            Besides a car we do also provide
-                            van, jeep, hiace, bus required for the marriage ceremony.</p>
+                        <p>We provide our customers with a car
+                            suitable for
+                            Marriage ceremonies as well. This service is very customizable because we decorate the
+                            vehicle
+                            ourselves according to the client needs.
+                            Beside a car for bride and groom, we provice every type of vehicle suitable for people going
+                            for Janti as well.</p>
                         <a href="#instantbooking" onclick="preFillService(this)"
                             id="Wedding and other ceremonies"><button>Book
                                 Now</button></a>
@@ -221,7 +220,7 @@
                                 <input type="number" id='Mobile' name='Mobile' placeholder="Phone" class="form-control"
                                     required maxlength="15">
                                 <select class="form-select" id='LEADCF6' name='LEADCF6' class="form-control" required>
-                                    <option selected>Vehicle Type</option>
+                                    <option hidden>Vehicle Type</option>
                                     <option value='Car'>Car</option>
                                     <option value='Jeep'>Jeep</option>
                                     <option value='Van'>Van</option>
@@ -230,7 +229,7 @@
                                     <option value='Bus'>Bus</option>
                                 </select>
                                 <select class="form-select" id='LEADCF5' name='LEADCF5' class="form-control" required>
-                                    <option selected>Service</option>
+                                    <option hidden>Service</option>
                                     <option value='Pick up/Drop off'>Pick up/Drop off
                                     </option>
                                     <option value='Sightseeing(Half day/Full day)'>
@@ -247,11 +246,10 @@
                                     class="form-control" required maxlength="100">
                                 <input type="text" id='LEADCF1' name='LEADCF1' placeholder="Pickup Location"
                                     class="form-control" required maxlength="100">
-                                <input type="datetime-local" id='LEADCF8' name='LEADCF8' placeholder="From:" required
-                                    class="form-control">
-                                <input type="datetime-local" id='LEADCF7' name='LEADCF7' placeholder="To:" required
-                                    class="form-control">
-                                <!-- <input class="button" type="submit" value="Book Now"> -->
+                                <input type="datetime-local" id='LEADCF8' name='LEADCF8' placeholder="Pickup Date..."
+                                    required class="form-control">
+                                <input type="datetime-local" id='LEADCF7' name='LEADCF7' placeholder="Dropoff Date..."
+                                    required class="form-control">
                                 <button type="submit" id='formsubmit' class="button formsubmit">Book Now <i
                                         class="bi bi-clipboard-check-fill ms-1"></i></button>
                             </div>
@@ -507,6 +505,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="payment">
+                        <div class="heading">
+                            <h3>We Accept</h3>
+                        </div>
+                        <img src="Assets/esewa.webp" alt="esewa" width="70" class="me-2">
+                        <img src="Assets/khalti.jpg" alt="khalti" width="70">
+                    </div>
                 </div>
 
                 <div class="col-lg-2 col-6 mb-5">
@@ -554,8 +559,6 @@
                             <span><i class="bi bi-phone-fill"></i> Mobile no: 9803405102</span>
                             <span><i class="bi bi-whatsapp"></i> Whatsapp/Viber: 9803405102</span>
                             <span><i class="bi bi-envelope-fill"></i> info@nepalvehicletravelsandtours.com</span>
-                            <span><i class="bi bi-envelope-fill"></i>
-                                sagarkarki@nepalvehicletravelsandtours.com</span>
                             <span><i class="bi bi-envelope-fill"></i>
                                 sishir@nepalvehicletravelsandtours.com</span>
                             <button class="btn btn-sm btn-footer" data-aos="zoom-out"> <a
@@ -639,6 +642,18 @@
     <script>
         AOS.init({
             duration: 500,
+        });
+    </script>
+
+    <!-- flatpickr.js -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("input[type=datetime-local]", {
+            enableTime: true,
+            altInput: true,
+            altFormat: "F j, Y - h:i K",
+            dateFormat: "Y-m-d - h:i K",
+            minDate: "today",
         });
     </script>
 
