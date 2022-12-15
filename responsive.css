@@ -38,7 +38,7 @@
           width: auto;
      }
 
-     .footer-body .footer-logo {
+     .footer-logo, .payment {
           text-align: center;
           /* not working in bootstrap*/
      }

@@ -477,7 +477,7 @@ select {
 /* 9th section */
 
 .footer {
-     padding: 100px 0 10px;
+     padding: 80px 0 10px;
      margin-top: 100px;
      background-color: rgba(31, 32, 34, 0.6);
      position: relative;
@@ -562,8 +562,12 @@ select {
 
 .social-links-icons i {
      color: white;
-     font-size: 18px;
+     font-size: 22px;
      margin-right: 12px;
+}
+
+.payment {
+     margin-bottom: 30px;
 }
 
 .payment img {
@@ -731,6 +735,10 @@ select {
 
 .contact-info>div {
      margin-bottom: 25px !important;
+}
+
+.contact-info .socials {
+     margin-bottom: 70px !important;
 }
 
 .contact-info h3 {
