@@ -92,4 +92,8 @@
      .footer {
           margin-top: 40px;
      }
+
+     label{
+          display: block;
+     }
 }

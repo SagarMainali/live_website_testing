@@ -321,11 +321,12 @@
                   maxlength="100">
                 <input type="text" id='LEADCF1' name='LEADCF1' placeholder="Pickup Location" class="form-control"
                   required maxlength="100">
+                <label>Select Pickup Date and Time:</label>
                 <input class="form-control" type="datetime-local" placeholder="Pickup Date..." id='LEADCF8'
                   name='LEADCF8' required>
+                <label>Select Dropoff Date and Time:</label>
                 <input type="datetime-local" id='LEADCF7' name='LEADCF7' placeholder="Dropoff Date..."
-                  class="form-control" required readonly>
-                <!-- <input class="button" type="submit" value="Book Now"> -->
+                  class="form-control" required>
                 <button type="submit" id='formsubmit' class="button formsubmit">Book Now <i
                     class="bi bi-clipboard-check-fill ms-1"></i></button>
               </div>
@@ -797,7 +798,6 @@
       altFormat: "F j, Y - h:i K",
       dateFormat: "Y-m-d - h:i K",
       minDate: "today",
-      disableMobile: "true"
     });
   </script>
 

@@ -362,18 +362,33 @@ select {
      font-family: 'Montserrat';
      font-size: 14px !important;
      font-weight: 500 !important;
+     letter-spacing: 0.5px;
      padding-left: 20px !important;
      height: 50px;
      width: 320px !important;
      margin-bottom: 25px;
-     background-color: rgb(233, 236, 239) !important;
      border-radius: 10px !important;
      color: rgb(0, 0, 0) !important;
      border: 0 !important;
 }
 
+.booking input, select{
+     background-color: rgb(233, 236, 239) !important;
+}
+
 select {
      cursor: pointer;
+}
+
+label {
+     color: white;
+     margin-top: -6px;
+     margin-bottom: 8px;
+     font-size: 15px;
+     font-family: 'Montserrat';
+     width: 300px;
+     letter-spacing: 0.6px;
+     display: none;
 }
 
 .booking .button,
