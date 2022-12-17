@@ -58,6 +58,14 @@
      .tablecontent {
           overflow-x: scroll;
      }
+     
+     label{
+          display: block;
+     }
+     
+     input[type="datetime-local"] {
+          padding-top: 14px !important;
+     }
 }
 
 /*extra small screen*/
@@ -91,13 +99,5 @@
      .getintouch,
      .footer {
           margin-top: 40px;
-     }
-
-     label{
-          display: block;
-     }
-     
-     input[type="datetime-local"] {
-          padding-top: 14px !important;
      }
 }
